@@ -20,7 +20,7 @@ function generatePassword()
     //parse to make it into an integer, also serves as a check if its an actionable value i.e. an actual number
       var isNumber = parseInt(length);
 
-<<<<<<< HEAD
+
     //console.log(isNumber);
     //checks if value is greater or equal to 8
     if (isNumber >= 8)
@@ -38,7 +38,6 @@ function generatePassword()
          }
         
 
-=======
     console.log(isNumber);
     //checks if value is greater or equal to 8
     if (isNumber >= 8)
@@ -51,14 +50,13 @@ function generatePassword()
           
             let allowNumbers = confirm("Do you want to use numbers in your password?")
             
->>>>>>> 3c560d889bb15059f531df23265a7b5b303e0188
             
 if(!allowCapitals && !allowLowerCase && !allowNumbers && !allowSpecials)
 {
   alert("You need at least one password criteria")
 }
 else
-<<<<<<< HEAD
+
     var temp = "";
   var numberReached = false;
   console.log(numberReached);
@@ -126,34 +124,8 @@ finalList.concat(finalList,lowerCaseList);
 
       finalList.concat(finalList,specialCharList);
     }
-   
-   /* switch(expr)
-    {
-      case allowCapitals:
-      finalList + capitalList;
-      console.log(expr);
-      break;
-      case allowLowerCase:
-      finalList.concat(lowerCaseList,finalList);
-      break;
-      case allowNumbers:
-      finalList.concat(numberList,finalList);
-      break;
-      case allowSpecials:
-      finalList.concat(specialCharList,finalList);
-      break;
-    }*/
     console.log(finalList);
-    /*
-  for (var i = 0; i < isNumber; i++)
-    { 
-        //basic functionality, random to string draws from all alphanumerics
-        //problem comes from adding special characters, may have to set up manually
-        //slice grabs and generates the value each time once as is the difference  between the two values 
-        temp += (Math.random().toString(36).slice(2,3) + specialCharList);
-        }
-        */   
-       
+
     for(var i = 0 ; i < isNumber; i++)
     {
       temp += finalList[Math.floor(Math.random() *finalList.length)];
@@ -168,4 +140,3 @@ finalList.concat(finalList,lowerCaseList);
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
->>>>>>> 3c560d889bb15059f531df23265a7b5b303e0188
